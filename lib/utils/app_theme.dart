@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/app_colors.dart';
+import 'package:portfolio/utils/constants.dart';
 
 abstract class AppTheme {
   static ThemeData lightTheme = ThemeData(
-    fontFamily: "",
+    fontFamily: FONT_FAMILY,
     scaffoldBackgroundColor: Colors.white,
     colorScheme: const ColorScheme.light(
       primary: AppColors.PRIMARY_COLOR,
@@ -14,7 +15,7 @@ abstract class AppTheme {
   );
 
   static ThemeData darkTheme = ThemeData(
-    fontFamily: "",
+    fontFamily: FONT_FAMILY,
     scaffoldBackgroundColor: Colors.black,
     colorScheme: const ColorScheme.dark(),
   );
