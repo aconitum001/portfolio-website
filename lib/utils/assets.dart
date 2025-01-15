@@ -27,12 +27,16 @@ class Assets {
   static const String imageImagesAboutMe = "assets/images/about_me.svg";
 
   /// Assets for imageImagesBanner
-  /// assets/images/Banner.svg
-  static const String imageImagesBanner = "assets/images/Banner.svg";
+  /// assets/images/Banner.png
+  static const String imageImagesBanner = "assets/images/Banner.png";
 
   /// Assets for imageImagesGit
   /// assets/images/git.svg
   static const String imageImagesGit = "assets/images/git.svg";
+
+  /// Assets for imageImagesIconSocket
+  /// assets/images/icon-socket.svg
+  static const String imageImagesIconSocket = "assets/images/icon-socket.svg";
 
   /// Assets for imageImagesJavscript
   /// assets/images/javscript.svg
