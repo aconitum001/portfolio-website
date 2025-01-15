@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:portfolio/utils/app_router.dart';
 import 'package:portfolio/utils/app_theme.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class Portfolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: AppTheme.lightTheme,
-      getPages: [],
+      debugShowCheckedModeBanner: false,
+      getPages: AppRouter.pages(),
     );
   }
 }
