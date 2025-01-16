@@ -11,7 +11,7 @@ class ExperienceContainer extends StatelessWidget {
     double width = MediaQuery.sizeOf(context).width;
     return Container(
       color: Theme.of(context).colorScheme.primary,
-      padding: EdgeInsets.symmetric(horizontal: width * 0.04),
+      padding: EdgeInsets.symmetric(horizontal: width * 0.06),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

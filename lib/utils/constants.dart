@@ -79,3 +79,13 @@ const List<ExperienceModel> experiences = [
         'I collaborated with a team to deliver a fully functional and user-friendly application tailored to the bank\'s needs.',
   ),
 ];
+
+const String aboutMe =
+    "I am Skander Jenhani, a passionate Flutter developer and a Computer Science student, who began my development journey in 2023.\n"
+    "Since then, I have been dedicated to mastering the art of creating efficient and user-friendly mobile applications.\n"
+    "My experience includes both academic and professional pursuits, such as developing AmenSwift, a mobile banking app, during my internship at Amen Bank.\n"
+    "This opportunity allowed me to deepen my understanding of banking systems and refine my skills in Flutter development.\n\n"
+    "As a freelance developer, I've worked on diverse projects, including Quizzo, Foody, and a Tic Tac Toe game, showcasing my ability to deliver tailored and innovative solutions.\n"
+    "I take pride in my expertise with tools like GetX for state management and localization, which help me build scalable and dynamic applications.\n\n"
+    "In addition to my technical skills, I'm always eager to collaborate with international clients and explore niche markets, such as banking and QA automation tools.\n"
+    "With a focus on continuous learning and innovation, I strive to create impactful digital experiences that meet both client and user needs.";

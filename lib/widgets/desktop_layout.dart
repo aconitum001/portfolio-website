@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/about_me_container.dart';
 import 'package:portfolio/widgets/experience_container.dart';
 import 'package:portfolio/widgets/intro_container.dart';
 
@@ -12,6 +13,7 @@ class DesktopLayout extends StatelessWidget {
       children: [
         IntroContainer(width: width),
         const ExperienceContainer(),
+        const AboutMeContainer(),
       ],
     );
   }
