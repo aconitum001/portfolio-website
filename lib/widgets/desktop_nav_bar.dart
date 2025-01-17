@@ -66,7 +66,9 @@ class DesktopNavBar extends StatelessWidget {
         ),
         const Gap(5),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            desktopScrollController.scrollTo(8);
+          },
           child: Text(
             "Contact me",
             style: AppStyles.style20SemiBold(

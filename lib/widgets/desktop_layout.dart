@@ -10,6 +10,7 @@ import 'package:portfolio/widgets/contact_me_container.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/desktop_nav_bar.dart';
 import 'package:portfolio/widgets/experience_container.dart';
+import 'package:portfolio/widgets/footer_container.dart';
 import 'package:portfolio/widgets/project_container.dart';
 import 'package:portfolio/widgets/skills_container.dart';
 import 'package:portfolio/widgets/testomonies_container.dart';
@@ -33,7 +34,7 @@ class DesktopLayout extends StatelessWidget {
     TestomoniesContainer(),
     ContactMeContainer(),
     Gap(80),
-    
+    FooterContainer(),
   ];
 
   @override
