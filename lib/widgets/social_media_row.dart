@@ -4,7 +4,12 @@ import 'package:portfolio/utils/assets.dart';
 import 'package:portfolio/widgets/social_media_container.dart';
 
 class SocialMediaRow extends StatelessWidget {
-  const SocialMediaRow({super.key});
+  const SocialMediaRow({
+    super.key,
+    this.gap = 32,
+  });
+
+  final double gap;
 
   @override
   Widget build(BuildContext context) {
@@ -15,17 +20,17 @@ class SocialMediaRow extends StatelessWidget {
           isSelected: true,
           onTap: () {},
         ),
-        const Gap(32),
+        Gap(gap),
         SocialMediaContainer(
           image: Assets.imageIconsRedit,
           onTap: () {},
         ),
-        const Gap(32),
+        Gap(gap),
         SocialMediaContainer(
           image: Assets.imageIconsTwitter,
           onTap: () {},
         ),
-        const Gap(32),
+        Gap(gap),
         SocialMediaContainer(
           image: Assets.imageIconsDiscord,
           onTap: () {},

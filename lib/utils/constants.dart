@@ -83,6 +83,11 @@ const List<ExperienceModel> experiences = [
 ];
 
 const String resumePath = "assets/files/skander-cv.pdf";
+const String email = "skandern0000@gmail.com";
+const String phoneNumber = "+216 94415320";
+
+const String tagline =
+    "I specialize in building sleek, feature-rich mobile applications\nthat combine innovation, user-friendly design, and performance to exceed expectations.";
 
 const String aboutMe =
     "I am Skander Jenhani, a passionate Flutter developer and a Computer Science student, who began my development journey in 2023.\n"

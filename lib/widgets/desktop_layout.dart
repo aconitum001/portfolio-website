@@ -6,6 +6,7 @@ import 'package:portfolio/controllers/desktop_scroll_controller.dart';
 import 'package:portfolio/utils/app_styles.dart';
 import 'package:portfolio/utils/assets.dart';
 import 'package:portfolio/widgets/about_me_container.dart';
+import 'package:portfolio/widgets/contact_me_container.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/desktop_nav_bar.dart';
 import 'package:portfolio/widgets/experience_container.dart';
@@ -30,6 +31,9 @@ class DesktopLayout extends StatelessWidget {
     AboutMeContainer(),
     ProjectContainer(),
     TestomoniesContainer(),
+    ContactMeContainer(),
+    Gap(80),
+    
   ];
 
   @override
