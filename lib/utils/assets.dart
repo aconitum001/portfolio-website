@@ -18,6 +18,10 @@ class Assets {
   /// assets/icons/github.svg
   static const String imageIconsGithub = "assets/icons/github.svg";
 
+  /// Assets for imageIconsQuote
+  /// assets/icons/quote.svg
+  static const String imageIconsQuote = "assets/icons/quote.svg";
+
   /// Assets for imageIconsReadMore
   /// assets/icons/Read_More.svg
   static const String imageIconsReadMore = "assets/icons/Read_More.svg";
@@ -70,6 +74,10 @@ class Assets {
   /// assets/images/Logo_Amen_Bank.png
   static const String imageImagesLogoAmenBank = "assets/images/Logo_Amen_Bank.png";
 
+  /// Assets for imageImagesMan
+  /// assets/images/man.png
+  static const String imageImagesMan = "assets/images/man.png";
+
   /// Assets for imageImagesNest
   /// assets/images/nest.svg
   static const String imageImagesNest = "assets/images/nest.svg";
@@ -89,5 +97,9 @@ class Assets {
   /// Assets for imageImagesTicTacToe
   /// assets/images/tic_tac_toe.png
   static const String imageImagesTicTacToe = "assets/images/tic_tac_toe.png";
+
+  /// Assets for imageImagesWomen
+  /// assets/images/women.png
+  static const String imageImagesWomen = "assets/images/women.png";
 }
 

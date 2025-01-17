@@ -7,11 +7,13 @@ abstract class AppTheme {
     fontFamily: FONT_FAMILY,
     scaffoldBackgroundColor: Colors.white,
     colorScheme: const ColorScheme.light(
-        primary: AppColors.PRIMARY_COLOR,
-        secondary: AppColors.SECOUNDARY_COLOR,
-        onPrimary: AppColors.SECOUNDARY_GRAY_COLOR,
-        onSecondary: AppColors.MAIN_GRAY_COLOR,
-        primaryContainer: Color(0xff27272A)),
+      primary: AppColors.PRIMARY_COLOR,
+      secondary: AppColors.SECOUNDARY_COLOR,
+      onPrimary: AppColors.SECOUNDARY_GRAY_COLOR,
+      onSecondary: AppColors.MAIN_GRAY_COLOR,
+      primaryContainer: Color(0xff27272A),
+      onPrimaryContainer: Color(0xff404040),
+    ),
   );
 
   static ThemeData darkTheme = ThemeData(

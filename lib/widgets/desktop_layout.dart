@@ -11,6 +11,7 @@ import 'package:portfolio/widgets/desktop_nav_bar.dart';
 import 'package:portfolio/widgets/experience_container.dart';
 import 'package:portfolio/widgets/project_container.dart';
 import 'package:portfolio/widgets/skills_container.dart';
+import 'package:portfolio/widgets/testomonies_container.dart';
 import 'package:portfolio/widgets/welcome_container.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
@@ -28,6 +29,7 @@ class DesktopLayout extends StatelessWidget {
     ExperienceContainer(),
     AboutMeContainer(),
     ProjectContainer(),
+    TestomoniesContainer(),
   ];
 
   @override

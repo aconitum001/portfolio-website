@@ -1,6 +1,7 @@
 import 'package:portfolio/models/experience_model.dart';
 import 'package:portfolio/models/project_model.dart';
 import 'package:portfolio/models/skill_model.dart';
+import 'package:portfolio/models/testomonial_model.dart';
 import 'package:portfolio/utils/assets.dart';
 
 const String FONT_FAMILY = "Sora";
@@ -121,5 +122,33 @@ const List<ProjectModel> projects = [
         'It features point-based rewards, customizable skins, and challenges, making it a unique take on the classic game.',
     youtubeLink: "https://www.youtube.com/shorts/d5HXhgMxbuE",
     githubLink: "https://github.com/aconitum001/Tic-Tac-Toe",
+  ),
+];
+
+const List<TestomonialModel> testimonials = [
+  TestomonialModel(
+    image: Assets.imageImagesMan,
+    message: 'This product has completely exceeded my expectations! '
+        'The attention to detail and quality of service provided are simply outstanding. '
+        'I couldn’t have asked for a better experience. Highly recommended to anyone looking for excellence!',
+    name: 'John Doe',
+    role: 'Software Engineer',
+  ),
+  TestomonialModel(
+    image: Assets.imageImagesWomen,
+    message:
+        'Fantastic experience! From start to finish, the team was professional, responsive, '
+        'and went above and beyond to ensure everything was perfect. '
+        'It’s rare to come across such commitment to customer satisfaction these days.',
+    name: 'Jane Smith',
+    role: 'Product Manager',
+  ),
+  TestomonialModel(
+    image: Assets.imageImagesMan,
+    message: 'I am truly impressed with the quality and support provided. '
+        'Every interaction was seamless, and the results speak for themselves. '
+        'This level of dedication is exactly what sets this company apart from the rest!',
+    name: 'Emily Johnson',
+    role: 'Marketing Specialist',
   ),
 ];
