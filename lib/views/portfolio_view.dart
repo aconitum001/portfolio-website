@@ -13,7 +13,7 @@ class PortfolioView extends StatelessWidget {
       body: AdaptiveLayoutWidget(
         mobileLayout: (context) => const MobileLayout(),
         tabletLayout: (context) => const TabletLayout(),
-        desktopLayout: (context) => const DesktopLayout(),
+        desktopLayout: (context) =>  DesktopLayout(),
       ),
     );
   }

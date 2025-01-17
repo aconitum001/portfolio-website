@@ -14,6 +14,14 @@ class Assets {
   /// assets/icons/fb.svg
   static const String imageIconsFb = "assets/icons/fb.svg";
 
+  /// Assets for imageIconsGithub
+  /// assets/icons/github.svg
+  static const String imageIconsGithub = "assets/icons/github.svg";
+
+  /// Assets for imageIconsReadMore
+  /// assets/icons/Read_More.svg
+  static const String imageIconsReadMore = "assets/icons/Read_More.svg";
+
   /// Assets for imageIconsRedit
   /// assets/icons/redit.svg
   static const String imageIconsRedit = "assets/icons/redit.svg";
@@ -22,9 +30,17 @@ class Assets {
   /// assets/icons/twitter.svg
   static const String imageIconsTwitter = "assets/icons/twitter.svg";
 
+  /// Assets for imageIconsYoutube
+  /// assets/icons/youtube.svg
+  static const String imageIconsYoutube = "assets/icons/youtube.svg";
+
   /// Assets for imageImagesAboutMe
   /// assets/images/about_me.svg
   static const String imageImagesAboutMe = "assets/images/about_me.svg";
+
+  /// Assets for imageImagesAmenSwiftCover
+  /// assets/images/amenSwiftCover.png
+  static const String imageImagesAmenSwiftCover = "assets/images/amenSwiftCover.png";
 
   /// Assets for imageImagesBanner
   /// assets/images/Banner.png
@@ -58,6 +74,10 @@ class Assets {
   /// assets/images/nest.svg
   static const String imageImagesNest = "assets/images/nest.svg";
 
+  /// Assets for imageImagesQuizzoCover
+  /// assets/images/quizzo_cover.png
+  static const String imageImagesQuizzoCover = "assets/images/quizzo_cover.png";
+
   /// Assets for imageImagesSass
   /// assets/images/sass.svg
   static const String imageImagesSass = "assets/images/sass.svg";
@@ -65,5 +85,9 @@ class Assets {
   /// Assets for imageImagesStorybook
   /// assets/images/storybook.svg
   static const String imageImagesStorybook = "assets/images/storybook.svg";
+
+  /// Assets for imageImagesTicTacToe
+  /// assets/images/tic_tac_toe.png
+  static const String imageImagesTicTacToe = "assets/images/tic_tac_toe.png";
 }
 

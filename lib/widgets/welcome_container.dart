@@ -15,7 +15,7 @@ class WelcomeContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height * 0.7,
-      padding: EdgeInsets.symmetric(horizontal: width * 0.03),
+      padding: EdgeInsets.symmetric(horizontal: width * 0.07),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.secondary,
         image: const DecorationImage(
@@ -46,7 +46,6 @@ class WelcomeContainer extends StatelessWidget {
                   flex: 2,
                 ),
                 const SocialMediaRow(),
-                
               ],
             ),
           ),

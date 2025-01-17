@@ -1,4 +1,5 @@
 import 'package:portfolio/models/experience_model.dart';
+import 'package:portfolio/models/project_model.dart';
 import 'package:portfolio/models/skill_model.dart';
 import 'package:portfolio/utils/assets.dart';
 
@@ -80,6 +81,8 @@ const List<ExperienceModel> experiences = [
   ),
 ];
 
+const String resumePath = "assets/files/skander-cv.pdf";
+
 const String aboutMe =
     "I am Skander Jenhani, a passionate Flutter developer and a Computer Science student, who began my development journey in 2023.\n"
     "Since then, I have been dedicated to mastering the art of creating efficient and user-friendly mobile applications.\n"
@@ -89,3 +92,34 @@ const String aboutMe =
     "I take pride in my expertise with tools like GetX for state management and localization, which help me build scalable and dynamic applications.\n\n"
     "In addition to my technical skills, I'm always eager to collaborate with international clients and explore niche markets, such as banking and QA automation tools.\n"
     "With a focus on continuous learning and innovation, I strive to create impactful digital experiences that meet both client and user needs.";
+
+const List<ProjectModel> projects = [
+  ProjectModel(
+    image: Assets.imageImagesAmenSwiftCover,
+    projectTitle: 'AmenSwift',
+    projectDecription:
+        'AmenSwift is a mobile banking application developed during my internship at Amen Bank. '
+        'It provides users with a seamless banking experience, allowing them to manage accounts, transfer money, and track transactions efficiently. '
+        'This project deepened my understanding of Flutter development and banking systems.',
+    youtubeLink: "https://www.youtube.com/watch?v=XFmJ88LnZLQ",
+    githubLink: null,
+  ),
+  ProjectModel(
+    image: Assets.imageImagesQuizzoCover,
+    projectTitle: 'Quizzo',
+    projectDecription:
+        'Quizzo is a feature-rich quiz application designed to provide an engaging way to learn and test knowledge. '
+        'With a variety of categories and difficulty levels, it has been highly rated on GitHub for its functionality and design.',
+    youtubeLink: "https://www.youtube.com/watch?v=cLX2DUcYmgg",
+    githubLink: "https://github.com/aconitum001/Quizzo-flutter-Project",
+  ),
+  ProjectModel(
+    image: Assets.imageImagesTicTacToe,
+    projectTitle: 'Tic Tac Toe Game',
+    projectDecription:
+        'This Tic Tac Toe game offers a fun and competitive experience with solo play against bots of varying difficulties and multiplayer options. '
+        'It features point-based rewards, customizable skins, and challenges, making it a unique take on the classic game.',
+    youtubeLink: "https://www.youtube.com/shorts/d5HXhgMxbuE",
+    githubLink: "https://github.com/aconitum001/Tic-Tac-Toe",
+  ),
+];

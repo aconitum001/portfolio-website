@@ -19,7 +19,7 @@ class AboutMeContainer extends StatelessWidget {
         children: [
           Flexible(
             flex: 7,
-            child: Container(
+            child: SizedBox(
               width: 572,
               child: SvgPicture.asset(
                 Assets.imageImagesAboutMe,
