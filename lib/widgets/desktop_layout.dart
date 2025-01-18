@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:portfolio/controllers/desktop_scroll_controller.dart';
 import 'package:portfolio/utils/app_styles.dart';
 import 'package:portfolio/utils/assets.dart';
+import 'package:portfolio/utils/constants.dart';
 import 'package:portfolio/widgets/about_me_container.dart';
 import 'package:portfolio/widgets/contact_me_container.dart';
 import 'package:portfolio/widgets/custom_button.dart';
@@ -16,6 +17,8 @@ import 'package:portfolio/widgets/skills_container.dart';
 import 'package:portfolio/widgets/testomonies_container.dart';
 import 'package:portfolio/widgets/welcome_container.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'dart:html' as html;
+
 
 class DesktopLayout extends StatelessWidget {
   DesktopLayout({super.key});
@@ -77,7 +80,7 @@ class DesktopLayout extends StatelessWidget {
               child: CustomButton(
                 text: "Resume",
                 hasIcon: true,
-                onPressed: () {},
+                onPressed: _downloadFile,
                 icon: Assets.imageIconsDownload,
               ),
             )
@@ -85,5 +88,15 @@ class DesktopLayout extends StatelessWidget {
         ),
       ),
     );
+  }
+  
+   void _downloadFile() {
+    final filePath = resumePath;
+
+    final anchor = html.AnchorElement(href: filePath)
+      ..target = 'blank'
+      ..download = 'resume.pdf';
+    anchor.click();
+    anchor.remove();
   }
 }
