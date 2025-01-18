@@ -12,14 +12,14 @@ class ContactMeContainer extends StatelessWidget {
     return Container(
       color: Theme.of(context).colorScheme.secondary,
       padding: EdgeInsets.symmetric(horizontal: width * 0.04),
-      child: const Row(
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
             child: ContactForm(),
           ),
-          Gap(100),
-          ContactInfo(),
+          const Gap(100),
+          const ContactInfo(),
         ],
       ),
     );

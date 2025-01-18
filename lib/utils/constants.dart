@@ -83,7 +83,7 @@ const List<ExperienceModel> experiences = [
 ];
 
 const String resumePath = "assets/files/skander-cv.pdf";
-const String email = "skandern0000@gmail.com";
+const String myEmail = "skandern0000@gmail.com";
 const String phoneNumber = "+216 94415320";
 
 const String tagline =

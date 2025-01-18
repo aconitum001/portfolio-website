@@ -71,7 +71,7 @@ class ContactInfo extends StatelessWidget {
         ),
         const Gap(30),
         Text(
-          email,
+          myEmail,
           style: AppStyles.style28SemiBold(
             context,
             color: Theme.of(context).colorScheme.primary,

@@ -34,6 +34,7 @@ dependencies:
   flutter_svg: ^2.0.17
   gap: ^3.0.1
   get: ^4.6.6
+  http: ^1.2.2
   scrollable_positioned_list: ^0.3.8
   url_launcher: ^6.3.1
 
