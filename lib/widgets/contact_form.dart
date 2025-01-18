@@ -1,33 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/services/email_service.dart';
+import 'package:portfolio/controllers/contact_form_controller.dart';
 import 'package:portfolio/widgets/custom_button.dart';
 import 'package:portfolio/widgets/custom_text_field.dart';
 import 'package:portfolio/widgets/loading_button.dart';
 import 'package:portfolio/widgets/mail_text_field.dart';
 import 'package:portfolio/widgets/social_media_row.dart';
-
-class ContactFormController extends GetxController {
-  RxBool loading = false.obs;
-  final TextEditingController name = TextEditingController();
-  final TextEditingController email = TextEditingController();
-  final TextEditingController subject = TextEditingController();
-  final TextEditingController message = TextEditingController();
-
-  Rx<AutovalidateMode> autovalidateMode = AutovalidateMode.disabled.obs;
-
-  Future<void> sendEmail() async {
-    loading.value = true;
-    await EmailService.sendEmail(
-      name: name.text,
-      email: email.text,
-      subject: subject.text,
-      message: message.text,
-    );
-    loading.value = false;
-  }
-}
 
 class ContactForm extends StatelessWidget {
   ContactForm({super.key});
@@ -111,6 +90,7 @@ class ContactForm extends StatelessWidget {
                             if (formKey.currentState!.validate()) {
                               formKey.currentState!.save();
                               await contactFormController.sendEmail();
+                              contactFormController.refreshFields();
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text('Email sent successfully!'),
