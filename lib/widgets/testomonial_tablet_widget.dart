@@ -1,37 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 import 'package:portfolio/models/testomonial_model.dart';
 import 'package:portfolio/utils/app_styles.dart';
 import 'package:portfolio/utils/assets.dart';
 
-class TestomonialWidget extends StatelessWidget {
-  const TestomonialWidget({
+class TestomonialTabletWidget extends StatelessWidget {
+  const TestomonialTabletWidget({
     super.key,
     required this.testomonialModel,
     required this.isSelected,
-    required this.padding,
   });
 
   final TestomonialModel testomonialModel;
   final bool isSelected;
-  final double padding;
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 370 / 400,
-      child: Container(
-        padding: const EdgeInsets.all(40),
-        decoration: _buildDecoration(context),
-        margin: EdgeInsets.only(right: padding),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+    return Card(
+      elevation: 5,
+      color: isSelected
+          ? Theme.of(context).colorScheme.primary
+          : Theme.of(context).colorScheme.secondary,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+          vertical: 30,
+        ),
+        child: Row(
           children: [
             Stack(
               children: [
                 Container(
-                  width: 96,
-                  height: 96,
+                  width: 90,
+                  height: 90,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
@@ -69,37 +71,34 @@ class TestomonialWidget extends StatelessWidget {
                 )
               ],
             ),
-            const Spacer(),
-            Text(
-              testomonialModel.message,
-              textAlign: TextAlign.center,
-              style: AppStyles.style16Regular(
-                context,
-                color: isSelected
-                    ? Theme.of(context).colorScheme.secondary
-                    : Theme.of(context).colorScheme.onPrimaryContainer,
+            const Gap(20),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    testomonialModel.name,
+                    style: AppStyles.style20SemiBold(
+                      context,
+                      color: isSelected
+                          ? Theme.of(context).colorScheme.secondary
+                          : Theme.of(context).colorScheme.onPrimaryContainer,
+                    ),
+                  ),
+                  const Gap(2),
+                  Text(
+                    testomonialModel.message,
+                    style: AppStyles.style16Regular(
+                      context,
+                      color: isSelected
+                          ? Theme.of(context).colorScheme.secondary
+                          : Theme.of(context).colorScheme.onPrimaryContainer,
+                    ),
+                  ),
+                ],
               ),
             ),
-            const Spacer(),
-            Divider(
-              color: isSelected
-                  ? Theme.of(context).colorScheme.secondary
-                  : Theme.of(context).colorScheme.primary,
-              height: 0,
-              endIndent: 120,
-              indent: 120,
-            ),
-            const Spacer(),
-            Text(
-              testomonialModel.name,
-              style: AppStyles.style20SemiBold(
-                context,
-                color: isSelected
-                    ? Theme.of(context).colorScheme.secondary
-                    : Theme.of(context).colorScheme.onPrimaryContainer,
-              ),
-            ),
-            const Spacer(),
+            const Gap(20),
             Text(
               testomonialModel.role,
               style: AppStyles.style16SemiBold(
@@ -112,29 +111,6 @@ class TestomonialWidget extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  BoxDecoration _buildDecoration(BuildContext context) {
-    return BoxDecoration(
-      color: isSelected
-          ? Theme.of(context).colorScheme.primary
-          : Theme.of(context).colorScheme.secondary,
-      borderRadius: BorderRadius.circular(20),
-      boxShadow: [
-        BoxShadow(
-          offset: const Offset(0, 6),
-          blurRadius: 8,
-          spreadRadius: -6,
-          color: const Color(0xff18274B).withOpacity(0.12),
-        ),
-        BoxShadow(
-          offset: const Offset(0, 8),
-          blurRadius: 16,
-          spreadRadius: -6,
-          color: const Color(0xff18274B).withOpacity(0.08),
-        ),
-      ],
     );
   }
 }

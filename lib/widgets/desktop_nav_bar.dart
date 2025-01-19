@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/controllers/desktop_scroll_controller.dart';
+import 'package:portfolio/controllers/app_scroll_controller.dart';
 import 'package:portfolio/utils/app_styles.dart';
 
 class DesktopNavBar extends StatelessWidget {
   DesktopNavBar({super.key});
 
-  final DesktopScrollController desktopScrollController = Get.find();
+  final AppScrollController desktopScrollController = Get.find();
 
   @override
   Widget build(BuildContext context) {

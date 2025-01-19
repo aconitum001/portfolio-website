@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/controllers/desktop_scroll_controller.dart';
+import 'package:portfolio/controllers/app_scroll_controller.dart';
 import 'package:portfolio/widgets/about_me_container.dart';
 import 'package:portfolio/widgets/contact_me_container.dart';
 import 'package:portfolio/widgets/experience_container.dart';
@@ -13,9 +13,9 @@ import 'package:portfolio/widgets/welcome_container.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class DesktopLayout extends StatelessWidget {
-   DesktopLayout({super.key});
+  DesktopLayout({super.key});
 
-  final DesktopScrollController desktopScrollController = Get.find();
+  final AppScrollController desktopScrollController = Get.find();
 
   final List<Widget> items = const [
     Gap(60),

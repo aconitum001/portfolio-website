@@ -55,7 +55,7 @@ class CustomDrawer extends StatelessWidget {
             height: 0,
           ),
           const Gap(20),
-          const DrawerButtons(),
+           DrawerButtons(),
           const Gap(20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),

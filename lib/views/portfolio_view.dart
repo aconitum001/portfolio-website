@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/controllers/desktop_scroll_controller.dart';
+import 'package:portfolio/controllers/app_scroll_controller.dart';
 import 'package:portfolio/utils/app_styles.dart';
 import 'package:portfolio/utils/assets.dart';
 import 'package:portfolio/utils/constants.dart';
@@ -19,8 +19,8 @@ import 'dart:html' as html;
 class PortfolioView extends StatelessWidget {
   PortfolioView({super.key});
 
-  final DesktopScrollController desktopScrollController =
-      Get.put(DesktopScrollController());
+  final AppScrollController desktopScrollController =
+      Get.put(AppScrollController());
 
   @override
   Widget build(BuildContext context) {
