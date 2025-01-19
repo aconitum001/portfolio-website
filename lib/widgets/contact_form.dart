@@ -23,6 +23,7 @@ class ContactForm extends StatelessWidget {
         key: formKey,
         autovalidateMode: contactFormController.autovalidateMode.value,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomTextField(
               hint: "Your name",
@@ -78,38 +79,41 @@ class ContactForm extends StatelessWidget {
               },
             ),
             const Gap(20),
-            Row(
-              children: [
-                SizedBox(
-                  height: 56,
-                  child: contactFormController.loading.value
-                      ? const LoadingButton()
-                      : CustomButton(
-                          text: "Get in Touch",
-                          onPressed: () async {
-                            if (formKey.currentState!.validate()) {
-                              formKey.currentState!.save();
-                              await contactFormController.sendEmail();
-                              contactFormController.refreshFields();
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Email sent successfully!'),
-                                ),
-                              );
-                              contactFormController.autovalidateMode.value =
-                                  AutovalidateMode.disabled;
-                            } else {
-                              contactFormController.autovalidateMode.value =
-                                  AutovalidateMode.always;
-                            }
-                          },
-                        ),
-                ),
-                const Gap(24),
-                const SocialMediaRow(
-                  gap: 24,
-                ),
-              ],
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Row(
+                children: [
+                  SizedBox(
+                    height: 56,
+                    child: contactFormController.loading.value
+                        ? const LoadingButton()
+                        : CustomButton(
+                            text: "Get in Touch",
+                            onPressed: () async {
+                              if (formKey.currentState!.validate()) {
+                                formKey.currentState!.save();
+                                await contactFormController.sendEmail();
+                                contactFormController.refreshFields();
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text('Email sent successfully!'),
+                                  ),
+                                );
+                                contactFormController.autovalidateMode.value =
+                                    AutovalidateMode.disabled;
+                              } else {
+                                contactFormController.autovalidateMode.value =
+                                    AutovalidateMode.always;
+                              }
+                            },
+                          ),
+                  ),
+                  const Gap(24),
+                  const SocialMediaRow(
+                    gap: 24,
+                  ),
+                ],
+              ),
             )
           ],
         ),

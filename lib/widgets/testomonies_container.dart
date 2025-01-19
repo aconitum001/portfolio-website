@@ -38,22 +38,20 @@ class TestomoniesContainer extends StatelessWidget {
             ],
           ),
           const Gap(60),
-          IntrinsicHeight(
-            child: Row(
-              children: testimonials.asMap().entries.map(
-                (e) {
-                  int index = e.key;
-                  TestomonialModel testomonial = e.value;
-                  return Expanded(
-                    child: TestomonialWidget(
-                      testomonialModel: testomonial,
-                      isSelected: index == 1,
-                      padding: index == 2 ? 0 : 30,
-                    ),
-                  );
-                },
-              ).toList(),
-            ),
+          Row(
+            children: testimonials.asMap().entries.map(
+              (e) {
+                int index = e.key;
+                TestomonialModel testomonial = e.value;
+                return Expanded(
+                  child: TestomonialWidget(
+                    testomonialModel: testomonial,
+                    isSelected: index == 1,
+                    padding: index == 2 ? 0 : 30,
+                  ),
+                );
+              },
+            ).toList(),
           ),
           const Gap(100),
         ],

@@ -5,8 +5,8 @@ import 'package:portfolio/utils/assets.dart';
 import 'package:portfolio/widgets/social_media_row.dart';
 import 'package:portfolio/widgets/welcome_text.dart';
 
-class WelcomeContainer extends StatelessWidget {
-  const WelcomeContainer({super.key});
+class TabletWelcomeContainer extends StatelessWidget {
+  const TabletWelcomeContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +14,12 @@ class WelcomeContainer extends StatelessWidget {
     double height = MediaQuery.sizeOf(context).height;
     return Container(
       width: width,
-      height: height * 0.7,
+      height: height * 0.62,
       padding: EdgeInsets.symmetric(horizontal: width * 0.07),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.secondary,
         image: const DecorationImage(
-          alignment: Alignment(0.55, 0),
+          alignment: Alignment(0.75, 0),
           fit: BoxFit.fitHeight,
           image: AssetImage(
             Assets.imageImagesBanner,
@@ -48,7 +48,21 @@ class WelcomeContainer extends StatelessWidget {
                 const Spacer(
                   flex: 2,
                 ),
-                const SocialMediaRow(),
+                const Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: SocialMediaRow(),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: SizedBox(),
+                    )
+                  ],
+                ),
               ],
             ),
           ),

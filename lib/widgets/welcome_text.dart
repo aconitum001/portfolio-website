@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/utils/app_styles.dart';
@@ -12,7 +10,7 @@ class WelcomeText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,

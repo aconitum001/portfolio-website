@@ -15,11 +15,21 @@ class ContactMeContainer extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(
-            child: ContactForm(),
+          Flexible(
+            flex: 5,
+            child: SizedBox(
+              width: 500,
+              child: ContactForm(),
+            ),
           ),
-          const Gap(100),
-          const ContactInfo(),
+          const Flexible(
+            flex: 1,
+            child: Gap(100),
+          ),
+          const Expanded(
+            flex: 5,
+            child: ContactInfo(),
+          ),
         ],
       ),
     );

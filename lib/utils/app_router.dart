@@ -8,7 +8,7 @@ abstract class AppRouter {
     return [
       GetPage(
         name: portfolioView,
-        page: () => const PortfolioView(),
+        page: () => PortfolioView(),
       )
     ];
   }

@@ -1,4 +1,4 @@
 abstract class SizeConfig {
-  static const tabletBreakPoint = 800;
-  static const pcBreakPoint = 1300;
+  static const tabletBreakPoint = 920;
+  static const pcBreakPoint = 1250;
 }
