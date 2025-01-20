@@ -36,7 +36,7 @@ class ProjectLinks extends StatelessWidget {
                 ),
               )
             : const SizedBox(),
-        const Gap(12),
+        Gap(projectModel.youtubeLink != null ? 12 : 0),
         projectModel.githubLink != null
             ? MouseRegion(
                 cursor: SystemMouseCursors.click,
@@ -50,6 +50,26 @@ class ProjectLinks extends StatelessWidget {
                   },
                   child: SvgPicture.asset(
                     Assets.imageIconsGithub,
+                    width: 20,
+                    height: 20,
+                  ),
+                ),
+              )
+            : const SizedBox(),
+        const Gap(12),
+        projectModel.linkedinLink != null
+            ? MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    final websiteUri = Uri.parse(projectModel.linkedinLink!);
+                    launchUrl(
+                      websiteUri,
+                      mode: LaunchMode.externalApplication,
+                    );
+                  },
+                  child: SvgPicture.asset(
+                    Assets.imageIconsLinkedIn,
                     width: 20,
                     height: 20,
                   ),

@@ -19,7 +19,7 @@ class DesktopNavBar extends StatelessWidget {
           },
           child: Text(
             "About Me",
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.primary,
             ),
@@ -32,7 +32,7 @@ class DesktopNavBar extends StatelessWidget {
           },
           child: Text(
             "Skills",
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.primary,
             ),
@@ -45,7 +45,7 @@ class DesktopNavBar extends StatelessWidget {
           },
           child: Text(
             "Experience",
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.primary,
             ),
@@ -58,7 +58,7 @@ class DesktopNavBar extends StatelessWidget {
           },
           child: Text(
             "Project",
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.primary,
             ),
@@ -71,7 +71,7 @@ class DesktopNavBar extends StatelessWidget {
           },
           child: Text(
             "Contact me",
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.primary,
             ),

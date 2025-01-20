@@ -17,49 +17,61 @@ class SocialMediaRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SocialMediaContainer(
-          image: Assets.imageIconsLinkedIn,
-          isSelected: true,
-          onTap: () {
-            final websiteUri = Uri.parse(linkedInProfile);
-            launchUrl(
-              websiteUri,
-              mode: LaunchMode.externalApplication,
-            );
-          },
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: SocialMediaContainer(
+            image: Assets.imageIconsLinkedIn,
+            isSelected: true,
+            onTap: () {
+              final websiteUri = Uri.parse(linkedInProfile);
+              launchUrl(
+                websiteUri,
+                mode: LaunchMode.externalApplication,
+              );
+            },
+          ),
         ),
         Gap(gap),
-        SocialMediaContainer(
-          image: Assets.imageIconsGithub,
-          onTap: () {
-            final websiteUri = Uri.parse(githubProfile);
-            launchUrl(
-              websiteUri,
-              mode: LaunchMode.externalApplication,
-            );
-          },
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: SocialMediaContainer(
+            image: Assets.imageIconsGithub,
+            onTap: () {
+              final websiteUri = Uri.parse(githubProfile);
+              launchUrl(
+                websiteUri,
+                mode: LaunchMode.externalApplication,
+              );
+            },
+          ),
         ),
         Gap(gap),
-        SocialMediaContainer(
-          image: Assets.imageIconsFb,
-          onTap: () {
-            final websiteUri = Uri.parse(fbProfile);
-            launchUrl(
-              websiteUri,
-              mode: LaunchMode.externalApplication,
-            );
-          },
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: SocialMediaContainer(
+            image: Assets.imageIconsFb,
+            onTap: () {
+              final websiteUri = Uri.parse(fbProfile);
+              launchUrl(
+                websiteUri,
+                mode: LaunchMode.externalApplication,
+              );
+            },
+          ),
         ),
         Gap(gap),
-        SocialMediaContainer(
-          image: Assets.imageIconsInsta,
-          onTap: () {
-            final websiteUri = Uri.parse(instaProfile);
-            launchUrl(
-              websiteUri,
-              mode: LaunchMode.externalApplication,
-            );
-          },
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: SocialMediaContainer(
+            image: Assets.imageIconsInsta,
+            onTap: () {
+              final websiteUri = Uri.parse(instaProfile);
+              launchUrl(
+                websiteUri,
+                mode: LaunchMode.externalApplication,
+              );
+            },
+          ),
         ),
       ],
     );

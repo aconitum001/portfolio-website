@@ -29,6 +29,8 @@ class SkillContainer extends StatelessWidget {
         children: [
           SvgPicture.asset(
             skillModel.image,
+            width: 56,
+            height: 56,
           ),
           const Gap(32),
           Text(

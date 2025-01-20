@@ -4,6 +4,7 @@ class ProjectModel {
   final String projectDecription;
   final String? youtubeLink;
   final String? githubLink;
+  final String? linkedinLink;
 
   const ProjectModel({
     required this.image,
@@ -11,5 +12,6 @@ class ProjectModel {
     required this.projectDecription,
     required this.youtubeLink,
     required this.githubLink,
+    this.linkedinLink,
   });
 }

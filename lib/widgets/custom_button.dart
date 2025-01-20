@@ -32,7 +32,7 @@ class CustomButton extends StatelessWidget {
         children: [
           Text(
             text,
-            style: AppStyles.style20SemiBold(
+            style: AppStyles.style16SemiBold(
               context,
               color: Theme.of(context).colorScheme.secondary,
             ),
