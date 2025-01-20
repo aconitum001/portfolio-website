@@ -10,6 +10,7 @@ class MobileProjectsListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) => MobileProjectDisplayWidget(
         projectModel: projects[index],
         index: index,
