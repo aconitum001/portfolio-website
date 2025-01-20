@@ -31,7 +31,7 @@ class PortfolioView extends StatelessWidget {
           : _buildSmallScreenAppBar(context),
       endDrawer: width < SizeConfig.pcBreakPoint ? const CustomDrawer() : null,
       body: AdaptiveLayoutWidget(
-        mobileLayout: (context) => const MobileLayout(),
+        mobileLayout: (context) => MobileLayout(),
         tabletLayout: (context) => TabletLayout(),
         desktopLayout: (context) => DesktopLayout(),
       ),

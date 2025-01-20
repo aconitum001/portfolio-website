@@ -82,6 +82,9 @@ const List<ExperienceModel> experiences = [
   ),
 ];
 
+const String welcomeText =
+    "I'm Skander Jenhani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.";
+
 const String resumePath = "assets/files/skander-cv.pdf";
 const String myEmail = "skandern0000@gmail.com";
 const String phoneNumber = "+216 94415320";

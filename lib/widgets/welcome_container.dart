@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/utils/app_styles.dart';
 import 'package:portfolio/utils/assets.dart';
+import 'package:portfolio/utils/constants.dart';
 import 'package:portfolio/widgets/social_media_row.dart';
 import 'package:portfolio/widgets/welcome_text.dart';
 
@@ -31,15 +32,17 @@ class WelcomeContainer extends StatelessWidget {
         children: [
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Spacer(),
                 const FittedBox(
                   fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerLeft,
                   child: WelcomeText(),
                 ),
                 const Gap(18),
                 Text(
-                  "I'm Skander Jenhani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+                  welcomeText,
                   style: AppStyles.style16Regular(
                     context,
                     color: Theme.of(context).colorScheme.onSecondary,

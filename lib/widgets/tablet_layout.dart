@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/controllers/app_scroll_controller.dart';
+import 'package:portfolio/widgets/about_me_container.dart';
 import 'package:portfolio/widgets/contact_me_container.dart';
 import 'package:portfolio/widgets/experience_container.dart';
 import 'package:portfolio/widgets/footer_container.dart';
 import 'package:portfolio/widgets/project_container.dart';
-import 'package:portfolio/widgets/tablet_about_me_container.dart';
 import 'package:portfolio/widgets/tablet_skills_container.dart';
 import 'package:portfolio/widgets/tablet_welcome_container.dart';
 import 'package:portfolio/widgets/testomonial_tablet_container.dart';
@@ -23,7 +23,7 @@ class TabletLayout extends StatelessWidget {
     Gap(100),
     TabletSkillsContainer(),
     ExperienceContainer(),
-    TabletAboutMeContainer(),
+    AboutMeContainer(),
     ProjectContainer(),
     TestomonialTabletContainer(),
     ContactMeContainer(),

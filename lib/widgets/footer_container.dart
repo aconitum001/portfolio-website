@@ -13,7 +13,7 @@ class FooterContainer extends StatelessWidget {
     return Container(
       height: 85,
       color: Theme.of(context).colorScheme.primary,
-      padding: EdgeInsets.symmetric(horizontal: width * 0.07),
+      padding: EdgeInsets.symmetric(horizontal: width * 0.05),
       child: Row(
         children: [
           SvgPicture.asset(

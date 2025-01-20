@@ -10,11 +10,13 @@ class TestomonialWidget extends StatelessWidget {
     required this.testomonialModel,
     required this.isSelected,
     required this.padding,
+    this.isVertical = false,
   });
 
   final TestomonialModel testomonialModel;
   final bool isSelected;
   final double padding;
+  final bool isVertical;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,10 @@ class TestomonialWidget extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(40),
         decoration: _buildDecoration(context),
-        margin: EdgeInsets.only(right: padding),
+        margin: EdgeInsets.only(
+          right: isVertical ? 0 : padding,
+          bottom: isVertical ? padding : 0,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

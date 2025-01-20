@@ -78,6 +78,14 @@ class Assets {
   /// assets/images/man.png
   static const String imageImagesMan = "assets/images/man.png";
 
+  /// Assets for imageImagesMobileAboutMe
+  /// assets/images/mobile_about_me.svg
+  static const String imageImagesMobileAboutMe = "assets/images/mobile_about_me.svg";
+
+  /// Assets for imageImagesMobileBanner
+  /// assets/images/mobile_banner.svg
+  static const String imageImagesMobileBanner = "assets/images/mobile_banner.svg";
+
   /// Assets for imageImagesNest
   /// assets/images/nest.svg
   static const String imageImagesNest = "assets/images/nest.svg";

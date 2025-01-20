@@ -9,7 +9,12 @@ import 'package:portfolio/widgets/mail_text_field.dart';
 import 'package:portfolio/widgets/social_media_row.dart';
 
 class ContactForm extends StatelessWidget {
-  ContactForm({super.key});
+  ContactForm({
+    super.key,
+    this.isMobile = false,
+  });
+
+  final bool isMobile;
 
   final GlobalKey<FormState> formKey = GlobalKey();
 
@@ -109,9 +114,10 @@ class ContactForm extends StatelessWidget {
                           ),
                   ),
                   const Gap(24),
-                  const SocialMediaRow(
-                    gap: 24,
-                  ),
+                  if (!isMobile)
+                    const SocialMediaRow(
+                      gap: 24,
+                    ),
                 ],
               ),
             )
