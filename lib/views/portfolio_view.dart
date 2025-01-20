@@ -118,10 +118,10 @@ class PortfolioView extends StatelessWidget {
   void _downloadFile() {
     const filePath = resumePath;
 
-    final anchor = html.AnchorElement(href: filePath)
-      ..target = 'blank'
-      ..download = 'resume.pdf';
-    anchor.click();
-    anchor.remove();
+    try {
+      html.window.open(filePath, '_blank');
+    } catch (e) {
+      print('Error downloading file: $e');
+    }
   }
 }
