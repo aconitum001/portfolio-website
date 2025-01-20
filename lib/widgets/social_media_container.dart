@@ -34,6 +34,8 @@ class SocialMediaContainer extends StatelessWidget {
         child: Center(
           child: SvgPicture.asset(
             image,
+            width: 23,
+            height: 23,
             colorFilter: ColorFilter.mode(
               isSelected
                   ? Theme.of(context).colorScheme.secondary

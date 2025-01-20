@@ -4,7 +4,19 @@ import 'package:portfolio/models/skill_model.dart';
 import 'package:portfolio/models/testomonial_model.dart';
 import 'package:portfolio/utils/assets.dart';
 
-const String FONT_FAMILY = "Sora";
+// general infos:
+const String resumePath = "assets/files/skander-cv.pdf";
+const String myEmail = "skandern0000@gmail.com";
+const String phoneNumber = "+216 94415320";
+const String linkedInProfile = "https://www.linkedin.com/in/skander-jenhani/";
+const String githubProfile = "https://github.com/aconitum001";
+const String fbProfile = "https://www.facebook.com/skan.der.92123/";
+const String instaProfile = "https://www.instagram.com/skan5522/";
+// paragraphes :
+const String tagline =
+    "I specialize in building sleek, feature-rich mobile applications\nthat combine innovation, user-friendly design, and performance to exceed expectations.";
+const String welcomeText =
+    "I'm Skander Jenhani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.";
 
 List<SkillModel> skillsList = [
   const SkillModel(
@@ -82,16 +94,6 @@ const List<ExperienceModel> experiences = [
   ),
 ];
 
-const String welcomeText =
-    "I'm Skander Jenhani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.";
-
-const String resumePath = "assets/files/skander-cv.pdf";
-const String myEmail = "skandern0000@gmail.com";
-const String phoneNumber = "+216 94415320";
-
-const String tagline =
-    "I specialize in building sleek, feature-rich mobile applications\nthat combine innovation, user-friendly design, and performance to exceed expectations.";
-
 const String aboutMe =
     "I am Skander Jenhani, a passionate Flutter developer and a Computer Science student, who began my development journey in 2023.\n"
     "Since then, I have been dedicated to mastering the art of creating efficient and user-friendly mobile applications.\n"
@@ -160,3 +162,5 @@ const List<TestomonialModel> testimonials = [
     role: 'Marketing Specialist',
   ),
 ];
+
+const String FONT_FAMILY = "Sora";

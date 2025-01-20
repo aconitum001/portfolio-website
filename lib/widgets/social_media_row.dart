@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/utils/assets.dart';
+import 'package:portfolio/utils/constants.dart';
 import 'package:portfolio/widgets/social_media_container.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SocialMediaRow extends StatelessWidget {
   const SocialMediaRow({
@@ -16,24 +18,48 @@ class SocialMediaRow extends StatelessWidget {
     return Row(
       children: [
         SocialMediaContainer(
-          image: Assets.imageIconsFb,
+          image: Assets.imageIconsLinkedIn,
           isSelected: true,
-          onTap: () {},
+          onTap: () {
+            final websiteUri = Uri.parse(linkedInProfile);
+            launchUrl(
+              websiteUri,
+              mode: LaunchMode.externalApplication,
+            );
+          },
         ),
         Gap(gap),
         SocialMediaContainer(
-          image: Assets.imageIconsRedit,
-          onTap: () {},
+          image: Assets.imageIconsGithub,
+          onTap: () {
+            final websiteUri = Uri.parse(githubProfile);
+            launchUrl(
+              websiteUri,
+              mode: LaunchMode.externalApplication,
+            );
+          },
         ),
         Gap(gap),
         SocialMediaContainer(
-          image: Assets.imageIconsTwitter,
-          onTap: () {},
+          image: Assets.imageIconsFb,
+          onTap: () {
+            final websiteUri = Uri.parse(fbProfile);
+            launchUrl(
+              websiteUri,
+              mode: LaunchMode.externalApplication,
+            );
+          },
         ),
         Gap(gap),
         SocialMediaContainer(
-          image: Assets.imageIconsDiscord,
-          onTap: () {},
+          image: Assets.imageIconsInsta,
+          onTap: () {
+            final websiteUri = Uri.parse(instaProfile);
+            launchUrl(
+              websiteUri,
+              mode: LaunchMode.externalApplication,
+            );
+          },
         ),
       ],
     );

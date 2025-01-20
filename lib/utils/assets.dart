@@ -18,6 +18,14 @@ class Assets {
   /// assets/icons/github.svg
   static const String imageIconsGithub = "assets/icons/github.svg";
 
+  /// Assets for imageIconsInsta
+  /// assets/icons/insta.svg
+  static const String imageIconsInsta = "assets/icons/insta.svg";
+
+  /// Assets for imageIconsLinkedIn
+  /// assets/icons/linked_in.svg
+  static const String imageIconsLinkedIn = "assets/icons/linked_in.svg";
+
   /// Assets for imageIconsQuote
   /// assets/icons/quote.svg
   static const String imageIconsQuote = "assets/icons/quote.svg";
